@@ -7,7 +7,14 @@
 
 <body>
     <header>
-        <h1>Serviços</h1>
+        <a href="/" class="title">~ 👨‍🍳 HM Receitas 👨‍🍳 ~</a>
+        <nav>
+            <a href="Sobre.html">Sobre</a>
+            <a href="Servicos.html">Serviços</a>
+            <a href="Localizacao.html">Localização</a>
+            <a href="Contato.html">Fale Conosco</a>
+            <a href="FAQ.html">FAQ</a>
+        </nav>
     </header>
 
     <main>
@@ -22,5 +29,51 @@
 </html>
 
 <style>
+    body {
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
 
+    .title {
+        color: white;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 36;
+        text-decoration: none;
+    }
+
+    header {
+        background-color: #133;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #555;
+    }
+
+    @media (max-width: 600px) {
+        nav {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav a {
+            margin: 5px 0;
+        }
+    }
 </style>
